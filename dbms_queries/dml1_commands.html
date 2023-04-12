@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB | DEVERSE</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/css_for_dnms_tutorial5.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li><a href="../website/second.html">HOME</a></li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn"
+                target="_blank"
+                >TUTORIALS</a
+              >
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JAVASCRIPT</a></li>
+                  <li><a href="../dbmstutorial/whatisdbms.html">DBMS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=web+development+full+course"
+                target="_blank"
+                >VIDEOS</a
+              >
+            </li>
+            <li>
+              <a href="">PROGRAMS</a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="../website/programs_of_html.html">HTML</a></li>
+                  <li><a href="../website/programs_of_css.html">CSS</a></li>
+                  <li><a href="../website/output_of_js.html">JAVASCRIPT</a></li>
+                  <li><a href="../website/output_of_js.html">DBMS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="whole_content">
+      <div class="topics">
+        <ul>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >What is DBMS?</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a
+                href="../dbmstutorial/dbmsarchitecture.html"
+                class="for_content"
+                >DBMS Architecture</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >Schema and Instaces in DBMS</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >File System V/S DBMS</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >DBMS Advantages</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >DBMS Disadvantages</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a
+                href="../dbmstutorial/whatisdbms.html"
+                class="for_content"
+                style="color: orange; border-bottom: 2px solid orange"
+                >Various Languages in DBMS</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>DML COMMANDS</h1>
+        <br />
+        <br />
+        <p class="define_content">
+          The SQL commands that deals with the manipulation of data present in
+          the database belong to DML or Data Manipulation Language and this
+          includes most of the SQL statements. It is the component of the SQL
+          statement that controls access to data and to the database. Basically,
+          DCL statements are grouped with DML statements.
+        </p>
+        <h2 class="define_content"><span>INSERT</span></h2>
+        <p class="define_content">
+          <span>Insert command</span> is used to insert items/data into an
+          existing table. It is a DML command. The INSERT INTO statement of SQL
+          is used to insert a new row/record in a table. <br> There are many ways of
+          using the INSERT INTO statement for inserting rows. <BR></BR>
+</p>
+        <br />
+        <br />
+        <h2 class="sub_heading">Syntax :</h2>
+        <p class="define_content" id="exg">
+          <span><i
+            >1. INSERT INTO table_name VALUES (value1, value2, value3); </i
+          ></span><br>
+          <BR>table_name: name of the table. value1, value2 
+<br>
+            value of first column, second column,… for the new record</BR>
+            <br>
+            <br>
+           <span><i>2. INSERT INTO table_name (column1, column2, column3) 
+            VALUES ( value1, value2, value3);</i></span>
+        <br><br>
+        table_name:  name of the table. 
+        <br>
+            column1: name of first column, second column . <br>
+            value1, value2, value3  value of first column, second column,… for the new record
+        </p>
+        <br /><br />
+        <h2 class="sub_heading">Example :</h2>
+        <br />
+        <div class="output">
+          <img
+            src="../query_images/tablecontentfortruncatecommand.PNG"
+            alt=""
+          />
+        </div>
+        <br /><br /><br />
+        <h2 class="define_content"><span>UPDATE</span></h2>
+        <p class="define_content">
+            The <span>UPDATE</span> statement in SQL is used to update the data of an existing table in the database. We can update single columns as well as multiple columns using the UPDATE statement as per our requirement.
+
+            In a very simple way, we can say that SQL commands(UPDATE and DELETE) are used to change the data that is already in the database. The SQL DELETE command uses a WHERE clause.
+        </p>
+        <br />
+        <br />
+        <h2 class="sub_heading">Syntax :</h2>
+        <p class="define_content" id="exg">
+           <i> UPDATE table_name SET column1 = value1, column2 = value2,… 
+            WHERE condition;</i>
+        <br><br>
+            table_name: name of the table
+        <br>
+            column1: name of first , second, third column….
+        <br>
+            value1: new value for first, second, third column….
+        <br>
+            condition: condition to select the rows for which the 
+        <br>
+            values of columns needs to be updated.
+        </p>
+        <br /><br />
+        <h2 class="sub_heading">Example :</h2>
+        <br />
+        <div class="output">
+          <img
+            src="../query_images/updatecommand.PNG"
+            alt=""
+          />
+        </div>
+        <br />
+        <h2 class="sub_heading">Example :</h2>
+        <br />
+        <div class="output">
+          <img
+            src="../query_images/afterupdatecommand.PNG"
+            alt=""
+          />
+        </div><br /><br />
+        <br><br>
+        <div class="btn">
+          <a href="../dbms_queries/dml2_commands.html" class="page"
+            ><button class="next">NEXT</button></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

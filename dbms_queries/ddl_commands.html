@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB | DEVERSE</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/css_for_dnms_tutorial3.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li><a href="../website/second.html">HOME</a></li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn"
+                target="_blank"
+                >TUTORIALS</a
+              >
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JAVASCRIPT</a></li>
+                  <li><a href="../dbmstutorial/whatisdbms.html">DBMS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=web+development+full+course"
+                target="_blank"
+                >VIDEOS</a
+              >
+            </li>
+            <li>
+              <a href="">PROGRAMS</a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="../website/programs_of_html.html">HTML</a></li>
+                  <li><a href="../website/programs_of_css.html">CSS</a></li>
+                  <li><a href="../website/output_of_js.html">JAVASCRIPT</a></li>
+                  <li><a href="../website/output_of_js.html">DBMS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="whole_content">
+      <div class="topics">
+        <ul>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >What is DBMS?</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a
+                href="../dbmstutorial/dbmsarchitecture.html"
+                class="for_content"
+                
+                >DBMS Architecture</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >Schema and Instaces in DBMS</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >File System V/S DBMS</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >DBMS Advantages</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >DBMS Disadvantages</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content" style="color: orange; border-bottom: 2px solid orange"
+                >Various Languages in DBMS</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>DDL COMMANDS</h1>
+        <br />
+        <br />
+        <p class="define_content">DDL stands for Data definition Language.</p>
+        <p class="define_content">
+          Data Definition Language actually consists of the SQL commands that
+          can be used to define the database schema. It simply deals with
+          descriptions of the database schema and is used to create and modify
+          the structure of database objects in the database. DDL is a set of SQL
+          commands used to create, modify, and delete database structures but
+          not data. These commands <br> are normally not used by a general user, who
+          should be accessing the database via an application.
+        </p>
+        <h2 class="define_content"><span>CREATE</span></h2>
+        <p class="define_content">
+          <span>Create command</span> in
+          <span>Structured Query Language</span> (SQL) is generally used to
+          create a table. It is a DDL command.
+          <br>
+          <br>
+          A <span>Table</span> is a combination of rows and columns. For creating a table we have to define the structure of a table by <br> adding names to columns and providing data type and size of data to be stored in columns.
+        </p>
+        <br>
+        <br>
+        <h2 class="sub_heading">Syntax : </h2>
+        <p class="define_content" id="exg">    CREATE table table_name
+            <br><br>
+            (
+        <br>
+            Column1 datatype (size),
+        <br>
+            column2 datatype (size),
+        <br>
+            .
+        <br>
+            .
+        <br>
+            columnN datatype (size)
+        <br>
+            );<br><br>
+        
+            Here <span> table_name</span> is name of the table, <span> column</span> is the name of column</p> <br><br>
+            <h2 class="sub_heading">Example : </h2><br>
+            <div class="output" >
+                <img src="../query_images/createcommand.PNG" alt="">
+            </div>
+            <br><br><br>
+            <h2 class="define_content"><span>DROP</span></h2>
+            <p class="define_content">
+              <span>Drop command</span> in
+              <span>Structured Query Language</span> (SQL) is used to
+              delete a whole databse or just a table. It is a DDL command.
+              <br>
+              <br>
+              The DROP statement which destroys objects like an existing database, table, index, or view. A DROP statement in SQL removes a component from a relational database management system (RDBMS). 
+            </p>
+            <br>
+            <br>
+            <h2 class="sub_heading">Syntax : </h2>
+            <p class="define_content" id="exg">
+               <i> DROP object object_name</i>
+            </p>
+                <h2 class="sub_heading">Example : </h2><br>
+                <div class="output" >
+                    <img src="../query_images/dropcommand.PNG" alt="">
+                </div>
+            <br><br><br><br>
+        <div class="btn">
+    <button class="next"><a href="../dbms_queries/ddl2_commands.html" class="page">NEXT</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

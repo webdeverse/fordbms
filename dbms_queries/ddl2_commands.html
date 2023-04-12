@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB | DEVERSE</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/css_for_dnms_tutorial4.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <div class="logo"></div>
+        <nav>
+          <ul>
+            <li><a href="../website/second.html">HOME</a></li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn"
+                target="_blank"
+                >TUTORIALS</a
+              >
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JAVASCRIPT</a></li>
+                  <li><a href="../dbmstutorial/whatisdbms.html">DBMS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=web+development+full+course"
+                target="_blank"
+                >VIDEOS</a
+              >
+            </li>
+            <li>
+              <a href="">PROGRAMS</a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="../website/programs_of_html.html">HTML</a></li>
+                  <li><a href="../website/programs_of_css.html">CSS</a></li>
+                  <li><a href="../website/output_of_js.html">JAVASCRIPT</a></li>
+                  <li><a href="../website/output_of_js.html">DBMS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="whole_content">
+      <div class="topics">
+        <ul>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >What is DBMS?</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a
+                href="../dbmstutorial/dbmsarchitecture.html"
+                class="for_content"
+                >DBMS Architecture</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >Schema and Instaces in DBMS</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >File System V/S DBMS</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >DBMS Advantages</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a href="../dbmstutorial/whatisdbms.html" class="for_content"
+                >DBMS Disadvantages</a
+              >
+            </p>
+          </li>
+          <li>
+            <p class="topic">
+              <a
+                href="../dbmstutorial/whatisdbms.html"
+                class="for_content"
+                style="color: orange; border-bottom: 2px solid orange"
+                >Various Languages in DBMS</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>DDL COMMANDS</h1>
+        <br />
+        <br />
+        <h2 class="define_content"><span>TRUNCATE</span></h2>
+        <p class="define_content">
+          <span>Truncate command</span> is used to create a table. It is a DDL
+          command.
+          <br />
+          <br />
+          The major definition between <span>TRUNCATE </span>and
+          <span>DROP</span> is that truncate is used to delete the data inside the table not the whole table. TRUNCATE statement is a
+          Data Definition Language (DDL) operation that is used to mark the
+          extent of a table for deallocation (empty for reuse). The result of
+          this operation quickly removes all data from a table, typically
+          bypassing several integrity-enforcing mechanisms. It was officially
+          introduced in the SQL:2008 standard. The TRUNCATE TABLE mytable
+          statement is logically (though not physically) equivalent to the
+          DELETE FROM mytable statement (without a WHERE clause).
+        </p>
+        <br />
+        <br />
+        <h2 class="sub_heading">Syntax :</h2>
+        <p class="define_content" id="exg">
+            <i >TRUNCATE TABLE  table_name;
+            <br><br>
+            table_name: Name of the table to be truncated.</i>
+        </p>
+        <br /><br />
+        <h2 class="sub_heading">Example :</h2>
+        <br />
+        <div class="output">
+          <img src="../query_images/tablecontentfortruncatecommand.PNG" alt="" />
+        </div>
+        <br />
+        <div class="output">
+          <img src="../query_images/aftertruncationcommand.PNG" alt="" />
+        </div>
+        
+        <br /><br /><br />
+        <h2 class="define_content"><span>DROP vs TRUNCATE</span></h2>
+        <p class="define_content">
+       <span>Truncate</span> is normally ultra-fast and it’s ideal for deleting data from a temporary table. <BR>
+        <span>Truncate</span> preserves the structure of the table for future use, unlike drop table where the table is deleted with its full structure.
+        Table or Database deletion using a DROP statement cannot be rolled back, so it must be used wisely.
+        </p>
+        <br />
+        <br />
+        <h2 class="sub_heading">Differentiate between DROP and TRUNCATE</h2>
+        <br>
+        <table border="2px">
+            <tr style="height:30px;">
+            <th><span>DROP</span></th>
+            <th><span>TRUNCATE</span></th>
+            </tr>
+            <tr>
+                <td> In the drop table data and its definition is deleted with their full structure.
+                </td>
+                <td> It preserves the structure of the table for further use exist but deletes all the data.</td>
+            </tr>
+            <tr>
+                <td> Drop is used to eliminate existing complications and fewer complications in the whole database from the table.</td>
+                <td>Truncate is used to eliminate the tuples from the table.</td>
+            </tr>
+            <tr>
+                <td> Integrity constraints get removed in the DROP command.</td>
+                <td> Integrity constraint doesn’t get removed in the Truncate command.</td>
+            </tr>
+            <tr>
+                <td> Since the structure does not exist, the View of the table does not exist in the Truncate command.</td>
+                <td> Since the structure exists, the View of the table exists in the Truncate command.</td>
+            </tr>
+            <tr>
+                <td> Drop query frees the table space complications from memory.</td>
+                <td> This query does not free the table space from memory.</td>
+            </tr>
+        </table>
+        <br><br><br>
+        <div class="btn">
+          
+            <a href="../dbms_queries/dml1_commands.html" class="page"><button class="next">NEXT</button></a>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
